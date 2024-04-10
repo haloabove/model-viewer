@@ -1,0 +1,20 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.web.json",
+  "include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@dpc-sdp/ripple-core-ui": [
+        "./../../packages/ripple-core-ui/dist/rpl-lib-es.js"
+      ]
+    },
+    "verbatimModuleSyntax": true, // Use 'verbatimModuleSyntax' instead of 'importsNotUsedAsValues'
+    "ignoreDeprecations": "5.0" // Silence deprecation errors up to TypeScript version 5.0
+  },
+  "references": [
+    {
+      "path": "./tsconfig.vite-config.json"
+    }
+  ]
+}
