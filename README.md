@@ -1,6 +1,4 @@
-A simple app demonstrating how to import and use Ripple 2 components, in a standalone Vue 3 app.
-
-### 1. Access to Github Packages repos
+### 1. Access to Github Packages repos for Ripple2
 
 Ripple 2 is hosted publicly on Github Packages (ghcr), so a few steps need to be followed to co-exist with the npm ecosystem.
 
